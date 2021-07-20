@@ -1,0 +1,20 @@
+Staging area is a place where all the files are stored before commit.
+1 - Check Version 
+	git --version
+2 - Setting username and email
+	git config --global user.name "name"
+	git config --global user.email "email"
+3 - To directly edit config file
+	git config --global --edit
+4 - To intialize a folder as git repository
+	git init 
+5 - To get the status
+	git status 
+6 - To add a file 
+	git add filename //adds a file to staging area
+7 - To commit a file
+	git commit -m "message regarding the change"
+8 - To check all the commits
+	git log
+
+	
