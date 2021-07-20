@@ -1,4 +1,10 @@
+Repository is like a folder where all your related files are stored.
 Staging area is a place where all the files are stored before commit.
+Branches are a way to seperate your live code from the code that is currently in development.
+There can be any number of branches and a branch can also have other branches.
+Change in one branch does not affect other branches.
+If there are some files which you do not want git to keep track of, you can add those file names in .gitignore file.
+
 1 - Check Version 
 	git --version
 2 - Setting username and email
@@ -16,5 +22,17 @@ Staging area is a place where all the files are stored before commit.
 	git commit -m "message regarding the change"
 8 - To check all the commits
 	git log
-
-	
+9 - To add all the files in the staging area
+	git add .
+10 - To rollback to a previous commit
+	git checkout hashcode-of-commit //you can get hashcode of a commit via git log command
+11 - To go to the latest commit
+	git checkout master
+12 - To create a new branch
+	git branch branch-name
+13 - To directly create a branch and move to it
+	git checkout -b branch-name
+14 - Merging two branches
+	git merge branch-name
+15 - Creating a git-ignore file
+	touch .gitignore //you can also create this file manually
